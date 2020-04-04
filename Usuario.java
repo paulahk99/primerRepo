@@ -63,6 +63,10 @@ public class Usuario{
     public void setSaldo(int saldo) {
         this.saldo = saldo;
     }
+@Override
+    public boolean equals(Object o){
+        return this.getCedula().equalsIgnoreCase(((Usuario)o).getCedula());
+    }
     
     
 }
